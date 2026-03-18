@@ -114,6 +114,16 @@ main .task-counter {
   list-style: none;
 }
 
+.task-list ul:empty::after {
+  content: "ADD NEW TODO";
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: gray;
+  margin: 40px auto;
+}
+
 .task-list ul li {
   display: flex;
   justify-content: space-between;
