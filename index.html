@@ -4,15 +4,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>TODO APP</title>
 </head>
 
 <body>
-  <h1>TODO APP</h1>
-  <form>
-    <input type="text" placeholder="Add a todo">
-    <button type="submit">Add</button>
-  </form>
+  <nav>
+    <div class="brand">
+      <h1>UCHE<span>TODO</span></h1>
+    </div>
+
+
+    <div class="icon">
+      <img src="images/hand.png" alt="hand-icon">
+    </div>
+  </nav>
+
+  <main>
+    <div class="task-counter">
+      <div class="counter-text">
+        <h2>Todo Done</h2>
+        <p>Keep it up</p>
+      </div>
+
+      <div class="circular-progress">
+        <h2>1/3</h2>
+      </div>
+    </div>
+
+    <div class="input-task">
+      <input type="text" placeholder="Enter a Task">
+      <button>
+        <img src="images/plus.png" alt="plus-icon">
+      </button>
+    </div>
+
+    <div class="task-list">
+      <ul>
+        <li>
+          <p>Task 1</p>
+          <div class="task-buttons">
+            <button>
+              <img src="images/trash.png" alt="trash-icon" width="30">
+            </button>
+            <input type="checkbox" name="task-checkbox" id="task-checkbox">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
 </body>
 
 </html>
